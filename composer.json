@@ -13,8 +13,11 @@
         "fruitcake/laravel-cors": "^1.0",
         "fzaninotto/faker": "^1.9",
         "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/psr7": "^1.6",
         "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "okta/jwt-verifier": "^0.4.0",
+        "web-token/jwt-framework": "^2.1"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
