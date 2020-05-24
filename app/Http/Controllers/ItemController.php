@@ -19,12 +19,7 @@ class ItemController extends Controller
         $request->validate([
             'name' => 'required',
         ]);
-        do{
-            $id = Str::random(10);
-        }while(Item::find($id) != null);
-        $id = array('id' => $id);
-        $all = $id + $request->all();
-        $item = Item::create($all);
+        $item = Item::create($request->all());
 
         return (new ItemResource($item))->response()->setStatusCode(201);
     }
